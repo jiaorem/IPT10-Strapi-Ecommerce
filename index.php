@@ -114,6 +114,9 @@ $footerSlogan = $content->data->attributes->footerSlogan;
                 <?php for($i=1; $i <= $featuredProduct->stars; $i++){ ?>
                     <i class="fa fa-star"></i>
                 <?php }?>
+                <?php for($i=1; $i <= (5 - $featuredProduct->stars); $i++){ ?>
+                    <i class="fa fa-star-o"></i>
+                <?php }?>
                 </div>
                 <p><?php echo $featuredProduct->price ?></p>
             </div>
@@ -129,6 +132,9 @@ $footerSlogan = $content->data->attributes->footerSlogan;
                 <div class="rating" data-stars="5">
                 <?php for($i=1; $i <= $latestProduct->stars; $i++){ ?>
                     <i class="fa fa-star"></i>
+                <?php }?>
+                <?php for($i=1; $i <= (5 - $latestProduct->stars); $i++){ ?>
+                    <i class="fa fa-star-o"></i>
                 <?php }?>
                 </div>
                 
@@ -167,6 +173,9 @@ $footerSlogan = $content->data->attributes->footerSlogan;
                     <div class="rating" data-stars="5">
                     <?php for($i=1; $i <= $testimonial->stars; $i++){ ?>
                         <i class="fa fa-star"></i>
+                    <?php }?>
+                    <?php for($i=1; $i <= (5 - $testimonial->stars); $i++){ ?>
+                    <i class="fa fa-star-o"></i>
                     <?php }?>
                     </div>
                     <img src=<?php echo $testimonial->picture ?>>
@@ -238,7 +247,7 @@ $footerSlogan = $content->data->attributes->footerSlogan;
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2022 - Micoh Yabut</p>
+            <p class="copyright">Copyright 2020 - Samwit Adhikary</p>
         </div>
     </div>
 
